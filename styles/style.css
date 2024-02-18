@@ -259,6 +259,7 @@ ol {
 
 .content__list-item {
     /* Элемент списка с карточками */
+    max-height: 107px;
 }
 .content__list-item:has(:focus) {
     outline: none;
