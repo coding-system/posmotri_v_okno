@@ -187,9 +187,6 @@ ol {
     border: 1px solid #fff;
 }
 
-.search-form__label-text {
-}
-
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before,
 .search-form__checkbox:active + .search-form__pseudo-checkbox::before {
     content: "";
@@ -285,11 +282,6 @@ ol {
 
 .content__card-link:focus {
     outline: none;
-}
-
-.content__list-item:focus-visible {
-    outline: 1px solid #fff;
-    outline-offset: 1px;
 }
 
 .content__video-card {
