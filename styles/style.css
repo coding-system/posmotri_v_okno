@@ -51,8 +51,9 @@ ol {
 /* Все содерджжимое сайта */
 .content {
     display: flex;
-    gap: 30px;
-    padding: 266px 30px 0;
+    gap: 28px;
+    padding: 266px 30px 0; /* Это для тестов. Должно быть
+                                padding: 133px 30px 0;*/
 }
 
 /* Левая часть */
@@ -245,11 +246,11 @@ ol {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-top: 26px;
-    padding: 3px;
+    /* gap: 30px; */
+    margin-top: 22px;
+    padding: 2px;
     overflow: auto;
-    height: 100%;
+    height: 300px;
     width: 100%;
 }
 
@@ -260,6 +261,7 @@ ol {
 .content__list-item {
     /* Элемент списка с карточками */
     max-height: 107px;
+    margin-bottom: 30px;
 }
 .content__list-item:has(:focus) {
     outline: none;
@@ -298,7 +300,7 @@ ol {
 .content__video-card-description-container {
     /* Контейнер карточки*/
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
@@ -306,6 +308,7 @@ ol {
 
 .content__video-card-title {
     /* Заголовок в карточке*/
+    padding-top: 5px;
     font-family: Oswald, Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -316,6 +319,7 @@ ol {
 
 .content__video-card-description {
     /* Текст в карточке*/
+
     font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -327,9 +331,14 @@ ol {
     width: 194px;
     height: 107px;
     padding: 2px 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .more-button {
+    margin-bottom: -1px;
     width: 100%;
     height: 34px;
 }
@@ -352,5 +361,3 @@ ol {
     outline: 1px solid #fff;
     outline-offset: 1px;
 }
-
-/*dfgj*/
