@@ -52,8 +52,7 @@ ol {
 .content {
     display: flex;
     gap: 28px;
-    padding: 266px 30px 0; /* Это для тестов. Должно быть
-                                padding: 133px 30px 0;*/
+    padding: 266px 30px 0;
 }
 
 /* Левая часть */
@@ -114,7 +113,7 @@ ol {
     line-height: 0;
 }
 
-.search-form__label > .search-form__label-text:hover {
+.search-form__checkbox-list > .search-form__label:hover {
     text-decoration: underline;
 }
 
@@ -273,12 +272,17 @@ ol {
 }
 
 .content__card-link {
+    display: block;
     text-decoration: none;
     color: #fff;
 }
 
 .content__card-link:focus {
     outline: none;
+}
+
+.content__card-link_current {
+    background-color: #545050;
 }
 
 .content__video-card {
@@ -299,8 +303,8 @@ ol {
 
 .content__video-card-description-container {
     /* Контейнер карточки*/
+    padding-left: 2px;
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
